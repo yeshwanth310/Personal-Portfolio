@@ -2,11 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content=" Personal Portfolio"/>
-    <meta name="Keywords" content="Personal Portfolio"/>
-    <meta name="author" content="Yeshwanth"/>
 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content=" Personal Portfolio" />
+    <meta name="Keywords" content="Portfolio" />
+    <meta name="author" content="Yeshwanth" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css"
@@ -32,235 +33,349 @@
             </li>
           </ul>
           <ul class="nav-end">
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Work">Work</a></li>
-            <li><a href="#Portfolio">Portfolio</a></li>
+            <a href="#Home"> <li class="Home active-nav">Home</li></a>
+            <a href="#About"><li class="About">About</li></a>
+            <a href="#Skills"><li class="Skills">Skills</li></a>
+            <a href="#Work"><li class="Work">Work</li></a>
+            <a href="#Portfolio"><li class="Portfolio">Portfolio</li></a>
+          </ul>
+          <ul class="bars">
+            <li><i class="fas fa-bars"></i></li>
           </ul>
         </nav>
       </header>
+      <section class="main" id="Home">
+        <div class="left">
+          <a href=""><i class="fab fa-github"></i></a>
+          <a href=""> <i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="mid">
+          <p>Hi , I am <span>Yeshwanth</span></p>
 
-      <section class="page1" id="Home">
-        <div class="wrap-pg-1">
-          <div class="icons">
-            <a
-              href="https://github.com/yeshwanth310?tab=repositories"
-              target="_blank"
-            >
-              <i class="uit uit-github-alt"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/yeshwanth-m-s-381278185/"
-              target="_blank"
-            >
-              <i class="uit uit-linkedin-alt"></i
-            ></a>
-          </div>
-          <div class="text">
-            <h1>Hi, I am <span> Yeshwanth</span></h1>
-            <p>
-              I aim to work in a challenging organization where i can put my
-              best efforts towards the growth and success of the organisaton as
-              well as update my knowledge and skills.
-            </p>
-            <p>
-              <a href="">Contact Me <i class="fas fa-address-book"></i></a>
-            </p>
-          </div>
-          <img src="Developer activity-bro.svg" alt="" />
+          <p>
+            I aim to work in a challenging organization where i can put my best
+            efforts towards the growth and success of the organisaton as well as
+            update my knowledge and skills.
+          </p>
+          <a href=""
+            ><button>Contact Me <i class="fas fa-address-book"></i></button
+          ></a>
+        </div>
+        <div class="right">
+          <img src="Developer activity-bro.png" alt="" />
         </div>
       </section>
-      <section class="page2" id="About">
-        <div class="heading">
+      <section class="about" id="About">
+        <div class="head">
           <p>About Me</p>
           <p>My Introduction</p>
         </div>
-        <div class="inner-wrap">
-          <img src="Aboutimg.jpeg" alt="" />
-          <div class="right">
-            <div class="introduction">
-              <p>
-                Prefinal year undergrad computer science student from SRM IST
-                passionate about developing frontend for websites and designing
-                graphics.I am currently doing my 4th year.I have done 2
-                internships in graphic designing and 1 in web development.My
-                hobbies are doing graphic designing works,playing cricket and
-                badminton.My areas of interest is doing frontend for websites.
-              </p>
+        <div class="about-grid">
+          <div class="left-about">
+            <img src="Aboutimg.jpeg" alt="" />
+          </div>
+          <div class="right-about">
+            <p class="para">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+              doloremque tenetur adipisci sed! Ab temporibus nobis eveniet
+              ipsam. Aut tempora soluta odio consectetur perspiciatis eligendi
+              similique, saepe nemo dignissimos sapiente. Voluptate dolor
+              perspiciatis, vitae excepturi fugiat tenetur iste temporibus,
+              eligendi similique quasi debitis iure aliquid odit quas cum.
+              Voluptatum, impedit.
+            </p>
+            <div class="about-exp">
+              <p>11</p>
+              <p>5+</p>
+              <p>3</p>
             </div>
-            <div class="numbers">
-              <div class="github-repo">
-                <h1>11</h1>
-                <p>Github Repos</p>
-              </div>
-              <div class="exp">
-                <h1>3</h1>
-                <p>Company Experience</p>
-              </div>
-              <div class="proj">
-                <h1>5+</h1>
-                <p>Completed Projects</p>
-              </div>
+            <div class="about-exp-desc">
+              <p>Github Respositories</p>
+              <p>Projects</p>
+              <p>Company Experience</p>
             </div>
-            <div class="resume">
-              <p>
-                <a href="">Download CV <i class="uit uit-download-alt"></i></a>
-              </p>
-            </div>
+            <button>My Resume <i class="fas fa-download"></i></button>
           </div>
         </div>
       </section>
-      <!-- page-3 -->
-      <section class="page3" id="Skills">
-        <div class="heading">
+
+      <section class="skills" id="Skills">
+        <div class="skills-head">
           <p>Skills</p>
-          <p>My Technical level</p>
+          <p>My technical skills</p>
         </div>
-        <div class="wd-wrap">
-          <div class="web-wrap">
-
-          <!-- FRONT END -->
-
-            <div class="frontend">
-              <i class="fas fa-code"></i>
-              <p>Front End</p>
-
-              <div class="box-1">
-                <div class="html">
-                  <p>Html</p>
-                  <hr class="hr-1" />
-                  <di class="border-1"></di>
-                </div>
-              </div>
-              <div class="box-2">
-                <div class="html">
-                  <p>CSS</p>
-                  <hr class="hr-2" />
-                  <div class="border-2"></div>
-                </div>
-              </div>
-              <div class="box-3">
-                <div class="html">
-                  <p>Javascript</p>
-                  <hr class="hr-3" />
-                  <div class="border-3"></div>
-                </div>
-              </div>
-              <div class="box-4">
-                <div class="html">
-                  <p>React Js</p>
-                  <hr class="hr-4" />
-                  <div class="border-4"></div>
-                </div>
-              </div>
-            </div>  
-
-
-            <!-- BACK END -->
-
-            <div class="backend">
-              <i class="fas fa-database"></i>
-              <p>Back End</p>
-              <div class="box-5">
-                <div class="html">
-                  <p>Mysql</p>
-                  <hr class="hr-5" />
-                  <div class="border-5"></div>
-                </div>
-                <div class="box-6">
-                  <div class="html">
-                    <p>Node/Express JS</p>
-                    <hr class="hr-6" />
-                    <div class="border-6"></div>
-                  </div>
-                </div>
-                <div class="box-11">
-                  <div class="html">
-                    <p>PHP</p>
-                    <hr class="hr-11" />
-                    <div class="border-11"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- DESIGN -->
-            <div class="design-wrap">
-
-              <i class="fas fa-swatchbook"></i>
-              <p>Design</p>
-              <div class="box-7">
-                <div class="html">
-                  <p>Photoshop</p>
-                  <hr class="hr-7" />
-                  <div class="border-7"></div>
-                </div>
-              </div>
-
-              <div class="box-8">
-                <div class="html">
-                  <p>Illustrator</p>
-                  <hr class="hr-8" />
-                  <div class="border-8"></div>
-                </div>
-              </div>
-
-              <div class="box-9">
-                <div class="html">
-                  <p>Figma</p>
-                  <hr class="hr-9" />
-                  <div class="border-9"></div>
-                </div>
-              </div>
-
-              <div class="box-10">
-                <div class="html">
-                  <p>Adobe XD</p>
-                  <hr class="hr-10" />
-                  <div class="border-10"></div>
-                </div>
-              </div>
-              
-            </div>
-            <!-- PROGRAMMING -->
-            <div class="design-wrap">
-
-              <i class="fas fa-terminal"></i>
-              <p>Programming Languages</p>
-              <div class="box-12">
-                <div class="html">
-                  <p>Python</p>
-                  <hr class="hr-12" />
-                  <div class="border-12"></div>
-                </div>
-              </div>
-
-              <div class="box-13">
-                <div class="html">
-                  <p>C</p>
-                  <hr class="hr-13" />
-                  <div class="border-13"></div>
-                </div>
-              </div>
-
-              <div class="box-14">
-                <div class="html">
-                  <p>C++</p>
-                  <hr class="hr-14" />
-                  <div class="border-14"></div>
-                </div>
-              </div>
-
-              
+        <div class="wrap-top">
+          <div class="web-dev">
+            <ul class="frontend">
+              <li class="v-1"><i class="fas fa-code"></i> Front End</li>
+              <li>HTML</li>
+              <li>Css</li>
+              <li>Javascript</li>
+              <li>React Js</li>
+            </ul>
+          </div>
+          <div class="database">
+            <ul class="backend">
+              <li class="v-2"><i class="fas fa-database"></i> Back End</li>
+              <li>Mysql</li>
+              <li>Express Js/Node Js</li>
+              <li>PHP</li>
+            </ul>
+          </div>
+          <div class="version-control">
+            <ul class="control">
+              <li class="v-3">
+                <i class="fas fa-code-branch"></i> Webdevelopment Tools
+              </li>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Vscode</li>
+            </ul>
+          </div>
+        </div>
+        <div class="wrap-bottom">
+          <div class="programming">
+            <ul class="program">
+              <li class="v-4">
+                <i class="fas fa-terminal"></i> Programming Languages
+              </li>
+              <li>C</li>
+              <li>C++</li>
+              <li>Python</li>
+            </ul>
+          </div>
+          <div class="design-tool">
+            <ul class="design">
+              <li class="v-5">
+                <i class="fas fa-bezier-curve"></i> Design Tools
+              </li>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+              <li>Figma</li>
+              <!-- <li>Adobe Xd</li> -->
+            </ul>
           </div>
         </div>
       </section>
 
-    <!-- Work -->
+      <section class="Education" id="Work">
+        <div class="edu-head">
+          <p>Education</p>
+          <p>My Education</p>
+        </div>
+        <div class="edu-wrap">
+          <div class="juniorschool">
+            <p><i class="fas fa-book"></i> Junior school (Class-10)</p>
+            <p>Alpha Matriculation Higher Secondary School</p>
+            <p>2004-2016</p>
+            <p>Scored 89.4%</p>
+          </div>
+          <div class="high-school">
+            <p><i class="fas fa-atlas"></i> High school (Class-12)</p>
+            <p>AMM Matriculation Higher Secondary School</p>
+            <p>2016-2018</p>
+            <p>Scored 87.6%</p>
+          </div>
+          <div class="college">
+            <p>
+              <i class="fas fa-graduation-cap"></i> B.Tech - Computer Science &
+              Engineering
+            </p>
+            <p>SRM University Ramapuram</p>
+            <p>2018-2022</p>
+            <p>Scored 97.3%*</p>
+          </div>
+        </div>
+      </section>
 
+      <section class="work">
+        <div class="work-head">
+          <p>Work</p>
+          <p>My Experience</p>
+        </div>
+        <div class="work-wrap">
+          <div class="adsmen">
+            <p>
+              <i class="fab fa-figma"></i> Graphic Designer - Adsmen India pvt ,
+              Ltd
+            </p>
+            <p>Oct 2020 - Jan 2021</p>
+            <p>
+              I worked as an graphic designer for a period of 4months .I have
+              basically designed post and banners for social media, shops and
+              for educational institutions and did some video editing works for
+              the organization.
+            </p>
+          </div>
+          <div class="gominimalism">
+            <p>
+              <i class="far fa-object-ungroup"></i> Graphic Designer -
+              Gominimalism
+            </p>
+            <p>Jan 2021 - Feb 2021</p>
+            <p>
+              I worked as an graphic designer for period of 1 month.I have
+              designed vector images for the organisation's social media and
+              also for a mobile company.
+            </p>
+          </div>
+          <div class="sparks">
+            <p>
+              <i class="far fa-file-code"></i> Web Development - The Sparks
+              Foundation
+            </p>
+            <p>Jun 2021 - Jul 2021</p>
+            <p>
+              I worked as an web developer for a period of 1 month.I did a mini
+              project on donation using payment gateway integration(Razor API).
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio" id="Portfolio">
+        <div class="port-head">
+          <p>Portfolio</p>
+          <p>My projects</p>
+        </div>
+        <div class="port-wrap">
+          <div class="tesla">
+            <img src="tesla.png" alt="" />
+            <div class="flex-1">
+              <p>
+                This is a simple static cone of Tesla website built using HTML ,
+                CSS and Javascript.
+              </p>
+              <p>
+                <a
+                  href="https://yeshwanth310.github.io/Tesla-Clone/#pg-1"
+                  target="_blank"
+                  >View Project <i class="fas fa-play"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+          <div class="hulu">
+            <img src="hulu.png" alt="" />
+            <div class="flex-2">
+              <p>
+                This is a simple static cone of Hulu website built using HTML ,
+                CSS and Javascript.
+              </p>
+              <p>
+                <a
+                  href="https://yeshwanth310.github.io/Hulu-Clone/"
+                  target="_blank"
+                  >View Project <i class="fas fa-play"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+          <div class="microsoft">
+            <img src="microsoft.png" alt="" />
+            <div class="flex-3">
+              <p>
+                This is a simple static cone of Microsoft website built using
+                HTML , CSS and Javascript.
+              </p>
+              <p>
+                <a
+                  href="https://yeshwanth310.github.io/Microsoft-Clone/"
+                  target="_blank"
+                  >View Project <i class="fas fa-play"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+          <div class="Todo">
+            <img src="Todo.png" alt="" />
+            <div class="flex-4">
+              <p>
+                This is a simple Todo web app Built using React JS and it has
+                functionality of deleting and striking out the completed task.
+              </p>
+              <p>
+                <a
+                  href="https://yeshwanth-todolist.netlify.app/"
+                  target="_blank"
+                  >View Project <i class="fas fa-play"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+          <div class="Spark">
+            <img src="sparks.png" alt="" />
+            <div class="flex-5">
+              <p>
+                This is a simple project i did on my internship.This website is
+                basically a donation website integrated with payment using Razor
+                pay api(test mode).
+              </p>
+
+              <p>
+                <a
+                  href="https://yeshwanth310.github.io/Sparks-Payment-Integration/"
+                  target="_blank"
+                  >View Project <i class="fas fa-play"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+          <div class="Hotel">
+            <img src="Hotel.png" alt="" />
+            <div class="flex-6">
+              <p>
+                This Project is built using HTML,CSS ,JS as front end, python
+                flask as backend and MYSQL as database.
+              </p>
+              <p>
+                <a
+                  href="https://github.com/yeshwanth310/Hotel-Room-Booking"
+                  target="_blank"
+                  >View Project <i class="fas fa-play"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <form
+          action="https://formsubmit.co/yeshwanthsankar@gmail.com"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="New email!" />
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+
+          <input type="email" name="email" placeholder="Email Address" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://yourdomain.co/thanks.html"
+          />
+          <input
+            type="text"
+            name="text"
+            name="message"
+            placeholder="write your message"
+          />
+          <button type="submit">Send</button>
+        </form>
+      </footer>
     </div>
-    
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+
     <script src="script.js"></script>
   </body>
 </html>
