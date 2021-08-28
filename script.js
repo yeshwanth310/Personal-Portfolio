@@ -22,8 +22,8 @@ window.addEventListener("scroll", () => {
   });
 });
 const bars = document.querySelector(".bars");
-const nav = document.querySelector("nav");
-const list = document.getElementsByTagName("a");
+const ul = document.querySelector("#ul");
+const act = document.querySelector(".act");
 bars.addEventListener("click", () => {
-  nav.classList.toggle("mobo");
+  ul.classList.toggle("act");
 });
