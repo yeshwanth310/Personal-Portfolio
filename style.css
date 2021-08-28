@@ -6,6 +6,7 @@
 }
 :root {
   --violet: rgb(110, 87, 224);
+  --lightp: rgb(158, 139, 255);
   --black: rgba(0, 0, 0, 0.85);
   --lightb: rgba(0, 0, 0, 0.6);
 }
@@ -19,6 +20,22 @@ body {
   line-height: 1.7;
   color: var(--black);
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(211, 211, 211);
+  border-radius: 20px;
+  height: 120px;
+}
+
 header {
   width: 100%;
   padding: 30px;
@@ -846,5 +863,88 @@ li:hover::after {
   .port-head {
     text-align: center;
     padding: 420px 0px 0px 0px;
+  }
+}
+/* Forms */
+footer {
+  background-color: rgb(250, 250, 250);
+}
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10em;
+  align-items: center;
+}
+.top-form input {
+  padding: 10px;
+}
+
+form img {
+  object-fit: contain;
+  width: 500px;
+}
+.top-form {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 1.2em;
+}
+.inner-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+form p {
+  font-weight: 600;
+  font-size: 2em;
+  text-align: center;
+  border: 1px solid rgb(184, 184, 184);
+  position: relative;
+  top: -20px;
+}
+.inner-form textarea {
+  height: 100px;
+  padding: 10px;
+}
+
+form button {
+  border: none;
+  outline: none;
+  background-color: var(--violet);
+  color: #fff;
+  font-size: 1.2em;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+.about a {
+  color: #fff;
+}
+input,
+textarea {
+  outline: none;
+  border: none;
+  background: none;
+  border: 1px solid rgb(184, 184, 184);
+}
+form button i {
+  margin-left: 5px;
+}
+@media (max-width: 700px) {
+  footer {
+    background: none;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10em;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+  }
+  form img {
+    object-fit: contain;
+    width: 300px;
   }
 }
