@@ -18,6 +18,7 @@ body {
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
   line-height: 1.7;
+  overflow-x: hidden;
   color: var(--black);
 }
 ::-webkit-scrollbar {
@@ -46,6 +47,7 @@ header {
 .active {
   background-color: #fff;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  z-index: 22;
 }
 .active-nav {
   color: var(--violet);
@@ -957,9 +959,15 @@ form button i {
   margin-left: 5px;
 }
 @media (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
   footer {
     background: none;
     margin-bottom: 20px;
+    width: 300px;
+    overflow-x: hidden;
+    margin: 20px auto;
   }
   input {
     width: 300px;
