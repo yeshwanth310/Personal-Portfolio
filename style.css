@@ -36,6 +36,9 @@ body {
   border-radius: 20px;
   height: 120px;
 }
+nav p {
+  cursor: pointer;
+}
 
 header {
   width: 100%;
@@ -155,6 +158,9 @@ li:hover::after {
     gap: 2.5em;
     height: 100vh;
     transition: transform 0.5s ease-in-out;
+  }
+  .dark {
+    display: none;
   }
   .act {
     position: fixed;
