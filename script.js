@@ -23,16 +23,9 @@ window.addEventListener("scroll", () => {
   });
 });
 const bars = document.querySelector(".bars");
+
 const ul = document.querySelector("#ul");
 const act = document.querySelector(".act");
 bars.addEventListener("click", () => {
   ul.classList.toggle("act");
 });
-// const dark = document.querySelector(".dark");
-// const body = document.querySelector("body");
-// const active = document.querySelector("header");
-// const ptag = document.querySelectorAll("div.p"); //
-// dark.addEventListener("click", () => {
-//   body.classList.toggle("dark-mode");
-//   body.style.transition = "all 0.3s ease-in-out";
-// });
