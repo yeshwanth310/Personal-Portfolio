@@ -1,8 +1,5 @@
 AOS.init();
-window.addEventListener("scroll", function () {
-  let header = document.querySelector("header");
-  header.classList.toggle("active", window.scrollY > 100);
-});
+
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll("nav ul li");
 window.addEventListener("scroll", () => {
@@ -14,7 +11,6 @@ window.addEventListener("scroll", () => {
       current = section.getAttribute("id");
     }
   });
-
   navLi.forEach(li => {
     li.classList.remove("active-nav");
     if (li.classList.contains(current)) {
@@ -22,10 +18,8 @@ window.addEventListener("scroll", () => {
     }
   });
 });
-const bars = document.querySelector(".bars");
-
-const ul = document.querySelector("#ul");
-const act = document.querySelector(".act");
-bars.addEventListener("click", () => {
-  ul.classList.toggle("act");
-});
+// window.addEventListener("scroll", e => {
+//   if (window.scrollY > 80) {
+//     alert("hey");
+//   }
+// });
