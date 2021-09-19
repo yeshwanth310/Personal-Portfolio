@@ -7,7 +7,7 @@ window.addEventListener("scroll", () => {
   sections.forEach(section => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
-    if (pageYOffset >= sectionTop - sectionHeight / 2) {
+    if (pageYOffset >= sectionTop - sectionHeight / 5) {
       current = section.getAttribute("id");
     }
   });
@@ -23,3 +23,13 @@ window.addEventListener("scroll", () => {
 //     alert("hey");
 //   }
 // });
+const tesla = document.querySelector(".tesla-img");
+tesla.addEventListener("click", e => {
+  const container = document.querySelector(".container");
+
+  const close = document.querySelector(".close");
+  container.classList.add("show");
+  close.addEventListener("click", () => {
+    container.classList.remove("show");
+  });
+});
